@@ -1,0 +1,94 @@
+/* Selector Tipo*/
+
+body{
+    font-family: Verdana;
+}
+
+li{
+    background-color: red;
+}
+
+h2{
+    background-color: steelblue;
+}
+
+/* Selector de clase*/
+
+.series{
+    background-color: yellow;
+}
+
+.serie{
+    background-color: green;
+}
+
+/* Selector de id */
+
+#pokemon{
+    background-color: pink;
+}
+
+
+/* Especificidad de Selectores*/
+
+/* Selectores de tipo tienen una especifidiad
+de 1 */
+li{
+    background-color: lightgreen;
+}
+
+/* Selectores de clase tienen una especifidiad
+de 10 */
+
+.serie{
+    background-color: red;
+}
+
+
+/* Selectores de id tiene una especifidad de
+100*/
+#suits{
+    background-color: violet;
+}
+
+.serie-aburrida{
+    background-color: red;
+}
+
+#suits{
+    background-color: chocolate;
+}
+
+/* Selector de Atributo */
+
+[id]{
+    font-family: Roboto;
+}
+
+[id = "suits"]{
+    font-family: Helvetica;
+}
+
+/* Selectores combinados */
+
+/* Selector combinador de descendientes*/
+
+.dias .dia {
+    list-style: none;
+}
+
+.sublista-dia-uno .am{
+    text-decoration: underline;
+}
+
+/* Combinador de hermano adyacente*/
+
+.am + .pm{
+    background-color: white;
+}
+
+/* Combinador de hermanos generales*/
+
+.am ~ .pm{
+    background-color: white;
+}
